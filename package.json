@@ -1,15 +1,34 @@
 {
-  "name": "testing-webpack",
+  "name": "excel-frontend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Excel Application on Pure Javascript",
   "main": "webpack.config.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve",
+    "lint": "eslint \"**/*.{js,jsx}\"",
+    "lint-fix": "eslint --fix --ext .js,.jsx .",
     "build": "cross-env NODE_ENV=production webpack --mode production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kasymbayev/excel-frontend.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "excel",
+    "pure",
+    "js"
+  ],
+  "private": false,
+  "browserslist": "> 0.25%, not dead",
   "author": "Yertai Kassymbayev <kasymbaayev@gmail.com>",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kasymbayev/excel-frontend/issues"
+  },
+  "homepage": "https://github.com/Kasymbayev/excel-frontend#readme",
   "devDependencies": {
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^6.2.1",
